@@ -25,10 +25,10 @@ CONFIG+="\"prefer_ipv4\" : true,"
 
 
 echo "---UPDATING SYSTEM---"
-apt-get update --assume-yes
+yum update 
 
 echo "---INSTALL DEPENDENCING---"
-sudo apt-get --assume-yes install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev screen git nano htop
+sudo yum  install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev screen git nano htop
 
 echo "---DOWNLOAD,COMPILE, INSTALL AND CONFIGURE XMR-STAK-CPU"
 git clone https://github.com/fireice-uk/xmr-stak-cpu.git
